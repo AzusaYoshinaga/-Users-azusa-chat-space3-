@@ -12,6 +12,6 @@ module ChatSpace3
       g.stylesheets false
       g.javascripts false
       g.helper false
-      g.test_framework fals
+      g.test_framework false
   end
 end
