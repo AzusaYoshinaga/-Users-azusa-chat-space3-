@@ -21,10 +21,11 @@
     &__lists{
       display: inline-flex;
       color: #ffffff;
-      .list{
+      &__edit{
         font-size: inherit;
+        margin-right: 5px;
       }
-      .list{
+      &__cog{
         font-size: inherit;
       }
     }
