@@ -2,7 +2,6 @@
   background-color: #253141;
   width: 300px;
   float: left;
-  text-align: center;
   height: 100%;
   .header{
     justify-content: space-between;
@@ -33,5 +32,27 @@
   .groups{
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    color: #ffffffff;
+    padding: 0 20px;
+    .group{
+      box-sizing: border-box;
+      margin-bottom: 40px;
+      a{
+        text-decoration: none;
+      }
+      &__name{
+        font-size: 15px;
+        color: #ffffff;
+        margin-bottom: 5px;
+        padding-top: 20px;
+      }
+      &__message{
+        color: #ffffff;
+        font-size: 11px;
+        border-bottom-width: 20px;
+        padding-bottom: 20px;
+        padding-top: 5px;
+      }
+    }
   }
 }
