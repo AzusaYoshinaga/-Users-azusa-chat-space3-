@@ -19,7 +19,9 @@
     }
     &__lists{
       display: inline-flex;
-      color: #ffffff;
+      a{
+        color: white;
+      }
       &__edit{
         font-size: inherit;
         margin-right: 5px;
