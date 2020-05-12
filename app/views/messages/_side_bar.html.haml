@@ -1,14 +1,16 @@
 .side-bar
   .header
-    .header__name
-      ユーザーネーム
+    %h3.header__name
+      = current_user.name
     %ul.header__lists
       %li.header__lists__edit 
-        = fa_icon "edit"
+        =link_to %do
+          = fa_icon "edit"
       %li.header__lists__cog
-        = fa_icon "cog"
-
-  .groups
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'cog', class: 'icon')
+ 
+   .groups
     .group
       .group__name
         グループ名

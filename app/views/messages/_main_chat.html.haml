@@ -40,14 +40,10 @@
         メッセージ
 
   .form
-    .input_form-box
+    %form.new-message
       .input-box
-        .input-box__text
-        .input-box__image
-    .submit
-      .submit-  
-      
-      
-          
-
-      
+        %input{type: "text", class: "input-box__text"}
+        %label{class: "input-box__image"}
+          = fa_icon "image"
+          %input{type: "file", class: "input-box__image__file"}
+        %input{type: "submit", class: "submit-btn"}
