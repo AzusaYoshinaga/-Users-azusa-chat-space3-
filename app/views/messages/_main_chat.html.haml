@@ -40,10 +40,12 @@
         メッセージ
 
   .form
-    %form.new-message
-      .input-box
-        %input{type: "text", class: "input-box__text"}
-        %label{class: "input-box__image"}
-          = fa_icon "image"
-          %input{type: "file", class: "input-box__image__file"}
-        %input{type: "submit", class: "submit-btn"}
+    = form_for [@group, @message] do |f|
+      .input-box 
+        = f.text_field :content, class: 'form__text', placeholder: 'type a message'
+        = f.label :image, class: 'form__input-box__image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'submit-btn'
+
+
